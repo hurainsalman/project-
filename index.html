@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <a id="top"></a>
+</head>
+<body>
+     <header>
+    <div class="navbar">
+
+      <div class="logo ">
+        
+         <h4>COZASTORE</h4>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        
+      </div>
+      <div class="nav-search">
+        <select class="search-select">
+          <option>All</option>
+        </select>
+        <input placeholder="search" class="search-input">
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i> </div>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        <i class="fa-solid fa-heart fa-lg"></i>
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+    </div>
+    </header>
+
+  <div class="slider">
+    <!-- Slide 1 -->
+    <div class="slide slide1">
+        <div class="text-box">
+            <h1>MEN'S COLLECTION</h1>
+            <p>Winter Fashion 2025</p>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide slide2">
+        <div class="text-box">
+            <h1>New Collection</h1>
+            <p>Shop Now</p>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+
+
+
+  <div class="category-slider">
+
+    <div class="category-box">
+      <img src="Assets/images/banner-01.jpg" alt="Women">
+      <div class="text">
+        <h3>Women</h3>
+        <p>Spring 2025</p>
+      </div>
+      <div class="shop-now">Shop Now</div>
+      <div class="hover-overlay"></div>
+    </div>
+
+    <div class="category-box">
+      <img src="Assets/images/banner-02.jpg" alt="Men">
+      <div class="text">
+        <h3>Men</h3>
+        <p>Spring 2025</p>
+      </div>
+      <div class="shop-now">Shop Now</div>
+      <div class="hover-overlay"></div>
+    </div>
+
+    <div class="category-box">
+      <img src="Assets/images/banner-03.jpg" alt="Accessories">
+      <div class="text">
+        <h3>Accessories</h3>
+        <p>New Trend</p>
+      </div>
+      <div class="shop-now">Shop Now</div>
+      <div class="hover-overlay"></div>
+    </div>
+
+  </div>
+
+
+  <div class="heading">
+    <h1>PRODUCT OVERVEIW</h1>
+  </div>
+
+
+
+   
+
+<!-- FILTER TOGGLE -->
+<input type="checkbox" id="filter-toggle" hidden>
+
+<!-- COLOR -->
+<input type="radio" name="color" id="c-all" checked hidden>
+<input type="radio" name="color" id="black" hidden>
+<input type="radio" name="color" id="blue" hidden>
+<input type="radio" name="color" id="grey" hidden>
+<input type="radio" name="color" id="green" hidden>
+<input type="radio" name="color" id="red" hidden>
+<input type="radio" name="color" id="white" hidden>
+
+<!-- CATEGORY RADIO BUTTONS -->
+<input type="radio" name="category" id="all" checked hidden>
+<input type="radio" name="category" id="women" hidden>
+<input type="radio" name="category" id="men" hidden>
+<input type="radio" name="category" id="bag" hidden>
+<input type="radio" name="category" id="shoes" hidden>
+<input type="radio" name="category" id="watch" hidden>
+
+<!-- TOP NAV -->
+<div class="nav">
+  <div class="nav-left">
+  <label for="all">All Products</label>
+  <label for="women">Women</label>
+  <label for="men">Men</label>
+  <label for="bag">Bag</label>
+  <label for="shoes">Shoes</label>
+  <label for="watch">Watches</label>
+</div>
+
+
+  <div class="nav-right">
+    <label id="filterBtn">✕ Filter</label>
+    <div class="search">🔍 Search</div>
+  </div>
+</div>
+
+<!-- FILTER PANEL (UNCHANGED) -->
+<div class="filter-panel">
+  <div class="filter-col">
+    <h4>Sort By</h4>
+    <p>Default</p>
+    <p>Popularity</p>
+    <p>Average rating</p>
+    <p class="active">Newness</p>
+    <p>Price: Low to High</p>
+    <p>Price: High to Low</p>
+  </div>
+
+  <div class="filter-col">
+    <h4>Price</h4>
+    <p class="active">All</p>
+    <p>$0.00 – $50.00</p>
+    <p>$50.00 – $100.00</p>
+    <p>$100.00 – $150.00</p>
+    <p>$150.00 – $200.00</p>
+    <p>$200.00+</p>
+  </div>
+
+  <div class="filter-col">
+    <h4>Color</h4>
+    <label for="black"><span class="dot black"></span> Black</label>
+    <label for="blue"><span class="dot blue"></span> Blue</label>
+    <label for="grey"><span class="dot grey"></span> Grey</label>
+    <label for="green"><span class="dot green"></span> Green</label>
+    <label for="red"><span class="dot red"></span> Red</label>
+    <label for="white"><span class="dot white"></span> White</label>
+  </div>
+
+  <div class="filter-col">
+    <h4>Tags</h4>
+    <span class="tag">Fashion</span>
+    <span class="tag">Lifestyle</span>
+    <span class="tag">Denim</span>
+    <span class="tag">Streetstyle</span>
+    <span class="tag">Crafts</span>
+  </div>
+</div>
+
+
+  
+
+
+
+
+  <!-- Products Section -->
+  <div class="products" id="products-container"></div>
+  
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Categories -->
+    <div class="footer-box">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Watches</a></li>
+      </ul>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-box">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Get in Touch -->
+    <div class="footer-box">
+      <h4>Get in Touch</h4>
+      <p>
+        Any questions? Let us know in store at 8th floor,  
+        379 Hudson St, New York, NY 10018  
+        <br><br>
+        📞 +1 96 716 6879
+      </p>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-box">
+      <h4>Newsletter</h4>
+      email@example.com
+      <button>Subscribe</button>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    © 2025 All rights reserved | Made with ❤️ by Colorlib
+  </p>
+</footer>
+</body>
+</html>
